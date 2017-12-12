@@ -11,8 +11,9 @@ print("<h1>Kinetech Concepts Financial Reports</h1>")
 print("<br>")
 print("Available Exchanges:")
 print("<br>")
-for i in ccxt.exchanges:
-    print("/t| {} |".format(i))
-    print("<br>")
+print(ccxt.exchanges)
+#for i in ccxt.exchanges:
+#    print("/t| {} |".format(i))
+#    print("<br>")
 
 print("</body></html>")
