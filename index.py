@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-import datetime
 import ccxt
 
-print( "Content-type: text/html")
-print()
-print( "<html><head/>")
-print()
+print("Content-type: text/html")
+print("<html><head/>")
 print("<body>")
-print("test: {}".format(datetime.datetime.now()))
+print("Kinetech Concepts Financial Reports")
 print("<br>")
-print( "Hello.")
+print("Available Exchanges:")
+print("<br>")
+for i in ccxt.exchanges:
+    print("/t| {} |".format(i))
+    print("<br>")
+
 print("</body></html>")
